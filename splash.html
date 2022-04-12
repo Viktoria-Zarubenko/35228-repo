@@ -1,0 +1,37 @@
+<div class="center-screen">
+    <div id="loading"></div>
+</div>
+<style>
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body { overflow: hidden; background-color: #fff; color: #40abe3; text-align:center; }
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #40abe3;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+</style>

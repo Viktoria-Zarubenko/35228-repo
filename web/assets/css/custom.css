@@ -1,0 +1,68 @@
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+.login-bg-img {
+    position: relative;
+}
+.main-container {
+    position: absolute;
+    width: 100%;
+    margin-top: -25%;
+}
+.login-desc-text {
+    color: #b2b2b2;
+}
+.telegram-app-text {
+    color: #2a2a2a;
+}
+.custom-h3-size {
+    font-size: 22px;
+}
+.text-container {
+    margin-top: 7%;
+}
+.button-container {
+    margin-top: 3%;
+}
+.btn-start-app {
+    background-color: #FF748C;
+    font-size: 16px;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+}
+.btn-primary {
+    color: #000;
+    background-color: #40abe3!important;
+}
+.btn-start-app:hover {
+    background-color: #FF748C;
+}
+.btn-start-app:active .btn-start-app:focus {
+    background-color: #40abe3;
+}
+
+.plans-table {
+    overflow-y: scroll;
+    height: 250px;
+}

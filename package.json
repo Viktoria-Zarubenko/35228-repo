@@ -1,0 +1,18 @@
+{
+  "name": "my-planer-app",
+  "version": "1.0.0",
+  "description": "Planer",
+  "main": "main.js",
+  "author": "Viktoriia Zarubenko 35228",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^17.3.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "moment": "^2.29.1"
+  }
+}

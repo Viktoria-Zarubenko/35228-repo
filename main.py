@@ -1,6 +1,5 @@
-from application.classes.SingletonLogger import Singleton
-from application.classes import FactoryMethod
-
+from core.classes.SingletonLogger import Singleton
+from core.classes import FactoryMethod
 
 if __name__ == "__main__":
 
