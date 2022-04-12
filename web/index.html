@@ -26,7 +26,14 @@
             <button class="btn btn-default text-white btn-start-app" data-mdb-toggle="modal" data-mdb-target="#addPlanModal">
                 Dodaj plan
             </button>
+            <button class="btn btn-default text-white btn-start-app" onclick="sortPlansViaIterator()">
+                Sortuj plany
+            </button>
+            <button class="btn btn-primary text-white btn-lg h-100" onclick="runTemplateExample()">
+                Pobierz plany
+            </button>
         </div>
+
         <div class="container">
             <div class="col-12 text-container text-center plans-table">
                 <table class="table table-hover">
@@ -82,10 +89,27 @@
             eel.save_data_from_ui(planText, deadline);
         }
 
+        eel.send_plans_to_ui()
+        eel.expose(show_plans)
+
+        function show_plans(plans) {
+            let plans_table = document.getElementById('plans-table-body')
+            plans_table.innerHTML = ""
+            plans_table.innerHTML += plans
+        }
+
         eel.expose(clearInputs)
         function clearInputs() {
             document.getElementById('desc-input').value = ''
             document.getElementById('duration-input').value = ''
+        }
+
+        function sortPlansViaIterator() {
+            eel.sort_plans_via_iterator();
+        }
+
+        function runTemplateExample() {
+            eel.template_example()
         }
 </script>
 </body>

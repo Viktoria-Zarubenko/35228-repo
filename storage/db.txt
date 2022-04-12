@@ -1,9 +1,5 @@
-kkk:2022-04-14
-asdf:2022-04-08
-asdf:2022-04-17
-asdf:2022-04-10
-test plan:2022-04-12
-sdfghj:2022-04-08
-hgf:2022-04-14
-testowy:2022-04-07
-testowy plan:2022-04-15
+Mega plan!:2022-04-14
+Zaliczenie przedmiotu:2022-04-08
+Spacer z psami:2022-04-17
+Pójść do fryzjera:2022-04-10
+Kupić nową torebkę:2022-04-10

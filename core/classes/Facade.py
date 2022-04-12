@@ -2,19 +2,16 @@ import eel
 
 class SendingToast:
     def send_toast(self, plan_text: str, deadline: str):
-        print(f'Sending toast with data: {plan_text}, {deadline}')
+        print(f'Added new plan: {plan_text}, {deadline}')
 
 
 class Cleanup:
     def clear_inputs(self):
         eel.clearInputs()
-        print("Cleaning frontend inputs...")
 
 
 class SavingData:
     def save_data(self, plan_text: str, deadline: str):
-        print(f'Saving data: {plan_text}, {deadline}')
-
         txt_db_object = open('storage/db.txt', 'a')
         txt_db_object.write(f'{plan_text}:{deadline}\n')
         txt_db_object.close()
